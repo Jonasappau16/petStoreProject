@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.header-1{
+ min-height: 100vh; /*parent container*/ 
+ width: 100%;
+ background-image: linear-gradient(rgba(5, 5, 5, 0.7),rgba(39, 41, 40, 0.7)),url(./dog.jpeg);
+ background-position: center;
+ background-size: cover;
+  position: relative;
+}
+
+/* ----------THE NAV BODY --------- */
+nav{
+ display: flex;
+ padding: 2% 6%;
+ justify-content: space-between;
+ align-content: center; 
+ font-size: 20px;
+}
+
+/* NAV LOGO  */
+nav img{
+ width: 100px; 
+}
+
+.nav-links{
+ flex: 1;
+ text-align: right;  
+}
+.nav-links ul li{
+ list-style: none;
+ display: inline-block;
+ position: relative;
+ padding: 10px 20px; 
+}
+.nav-links ul li a{
+text-decoration: none;
+color: whitesmoke;
+font-family: 'Montserrat Alternates', sans-serif; 
+}
+  /* HOVER EFFECT  */
+
+.nav-links ul li::after{
+ content: " ";
+  width: 0%;
+ height: 2px;
+background: #f44336;
+display: block;
+ margin: auto;
+ transition: 0.8s;
+}
+.nav-links ul li:hover::after{
+ width: 100%;
+}
+  
+
+/* -----------services---------  */
+.header{
+ min-height: 100%;
+ text-align: center;
+ padding-top: 10px;
+ box-sizing: border-box;
+ background-image: linear-gradient(rgb(234, 128, 128),rgb(14, 81, 42));
+} 
+.services{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+
+.card-img-top-2{
+ width: 60vh;
+ height: auto;
+ margin-top: 20px;
+ margin-bottom: 20px;
+
+}
+
+.card-img-top{
+ width: 56vh;
+ height:auto;
+margin-top: 40px;  
+}
+
+.para1{
+color: #067c0f;
+font-size: medium;
+}
+.card-title{
+ font-weight: 700;
+ color: #f44336; 
+}
+/* footer  */
+.footer{
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: red;
+ color: white;
+ text-align: center;
+
+
+.card-columns {
+@include media-breakpoint-only(lg) {
+ column-count: 4;
+}
+@include media-breakpoint-only(lg) {
+ column-count: 5;
+}
+}
+.col-md-2{
+ margin-bottom: 0%;
+}
+
+/* ---media query ---- */
+
+@media(max-width:600px){
+ 
+/* NAV LOGO  */
+ .nav img{
+  width: 60px; 
+ }
+    /* NAV LINKS */
+ .nav-links ul li{
+  display: block;
+  color: black;
+ }
+ .nav-links{
+  position: absolute;
+  width:120px;
+  height: 60vh;
+  top: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+ box-sizing: border-box;
+  color: black;
+  opacity: 1px;  
+  text-align: center;
+  font-size: 12px;
+ }
+  /* SERVICES  */
+ .services h2{
+  font-size: 1px;
+  font-weight: 600;
+  color: rgb(1, 14, 2);
+ }
+
+ .services{
+  font-size: 20px;
+  font-weight: 400;
+  color: #010a01;
+ }
+
+ .services h1{
+  font-size: 100px;
+ }
+
+ .card-text{
+ font-size: 14px;
+ }
+ .para2{
+  font-size: 14px;
+ }
+ }
