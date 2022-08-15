@@ -56,6 +56,9 @@
     margin: auto;
     transition: 0.8s;
   }
+  nav .fa{
+    display: none;
+  } 
   .nav-links ul li:hover::after{
     width: 100%;
   }
@@ -320,9 +323,9 @@ section {
 
 
 @media (max-width: 600px) {
-.contact-us{
+ .contact-us{
 
-}
+ }
 .hero{
   width: 100%;
   height: 100vh;
@@ -344,25 +347,36 @@ nav img{
   width: 60px; 
  }
     /* NAV LINKS */
- .nav-links ul li{
-  display: block;
-  color: black;
- }
+    .nav-links ul li{
+      display: block;
+       font-size: 12px; 
+    }
  .nav-links{
   position: absolute;
   width:120px;
-  height: 60vh;
+  height: 100vh;
   top: 0;
-  right: 0;
+  right: -200px;
   text-align: center;
   z-index: 2;
+  transition: 1s;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
  box-sizing: border-box;
-  color: black;
+  color: white;
   opacity: 1px;  
-  text-align: center;
+  text-align: left;
   font-size: 12px;
  }
+ nav .fa{
+  display: block;
+  color: white;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.nav-links ul{
+  padding: 30px;
+}
 
   .footer-distributed{
     font: bold 14px sans-serif;
@@ -388,32 +402,6 @@ nav img{
  }
  .footer-distributed img{
    width: 60px;
-  
- } 
- @media(max-width:600px){
+ }
+} 
  
-  /* NAV LOGO  */
-  .nav img{
-    width: 60px; 
-  }
-      /* NAV LINKS */
-   .nav-links ul li{
-    display: block;
-    color: black;
-   }
-   .nav-links{
-    position: absolute;
-    width:120px;
-    height: 60vh;
-    top: 0;
-    right: 0;
-    text-align: center;
-    z-index: 2;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-   box-sizing: border-box;
-    color: black;
-    opacity: 1px;  
-    text-align: center;
-    font-size: 12px;
-   }
-}

@@ -11,7 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Tangerine:wght@700&display=swap" rel="stylesheet">
-
+    <!-- ############# FONT AWESOME ############ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
      <!-- CUSTOM CSS  -->
      <link rel="stylesheet" href="./style.css">
@@ -20,19 +21,21 @@
 <body>
     <!----------CUSTOM NAV BAR  -------->
  <section class="header-1">
-    <nav>
-     <!-- ----navlogo ------->
-     <a href=""><img src="./images/petsore-removebg-preview.png" alt=""></a>
-           <!-- -------NAVBAR LINKS-------  -->
-      <div class="nav-links">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="./service.html">SERVICES</a></li>
-            <li><a href="./contact.html">CONTACT</a></li>
-        </ul>
-        </div>
-     </nav>
+<nav>
+     <!-- ##########navlogo ########------->
+  <a href=""><img src="./images/petsore-removebg-preview.png" alt=""></a>
+           <!--========== NAVBAR LINKS ==========  -->
+ <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+     <li><a href="index.html">HOME</a></li>
+     <li><a href="about.html">ABOUT</a></li>
+     <li><a href="./service.html">SERVICES</a></li>
+     <li><a href="./contact.html">CONTACT</a></li>
+    </ul>
+ </div>
+  <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
       <!-- ---------Header content------ -->
       <div class="text-box" >
         <h1>Welcome to Noko Nice Pet Store</h1>
@@ -40,7 +43,17 @@
         <!-- adding a style to the link button  -->
         <a href="./about.html" class="center-btn">Visit Us To Know More</a>
      </div> 
-
     </section>
+  <!-- =============== JavaScript Toggle Menu ======== = -->
+  <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+<!-- ============ End of JavaScript Toggle Menu ============ -->
 </body>
 </html>

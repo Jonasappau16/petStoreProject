@@ -24,7 +24,8 @@
     <!-- ----navlogo ------->
   <a href=""><img src="./images/petsore-removebg-preview.png" alt=""></a>
   <!-- -------NAVBAR LINKS-------  -->
-  <div class="nav-links">
+  <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
     <ul>
       <li><a href="index.html">HOME</a></li>
       <li><a href="about.html">ABOUT</a></li>
@@ -32,10 +33,11 @@
       <li><a href="./contact.html">CONTACT</a></li>
      </ul>
   </div>
+  <i class="fa fa-bars" onclick="showMenu()"></i>
 </nav>
 
 
-<!-- About US -->
+<!-- ========= About US ============= -->
 
 <div class="about-section">
   <h1>About Us Page</h1>
@@ -43,16 +45,16 @@
 
 </div>
 
-<h2 style="text-align:center">Our Team</h2>
+<h2 class="h2-heading" >Our Team</h2>
 <div class="row">
   <div class="column">
     <div class="card">
       <img src="./ceo-new review.png" alt="Jane" style="width:100%">
       <div class="container">
-        <h2>Jonas Appau</h2>
+        <h2 style="color: whitesmoke;">Jonas Appau</h2>
         <p class="title">CEO & Founder</p>
-        <p style="color: whitesmoke;">Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p style="color: rgb(14, 2, 1)">jonasappau16@gmail.com</p>
+        <p style="color: rgb(243, 232, 232);">Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p style="color: rgb(198, 231, 10)">jonasappau16@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
@@ -65,7 +67,7 @@
         <h2 style="color: whitesmoke;">Rick Ross</h2>
         <p class="title">SNR Manager</p>
         <p style="color: whitesmoke;">Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p style="color: rgb(17, 2, 1)">rick@gmail.com</p>
+        <p style="color: rgb(200, 243, 10)">rick@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
@@ -78,7 +80,7 @@
         <h2 style="color: whitesmoke;">James Anaman</h2>
         <p class="title">CO-FOUNDER</p>
         <p style="color: whitesmoke;">Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p style="color: rgb(12, 2, 1)">Pjanaman@gmail.com</p>
+        <p style="color: rgb(196, 238, 9)">Pjanaman@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
@@ -123,11 +125,23 @@
      <a href="https://www.linkedin.com/in/jonas-appau-8a7825237/"><i class="fa fa-linkedin"></i></a>
 		 <a href="#"><i class="fa fa-facebook"></i></a>
      <a href="#"><i class="fa fa-twitter"></i></a>
-     
-    
-    </div>
+    </div> 
+     <!-- ========= Menu  bars Icon ====== -->
+    <i class="fa fa-bars" onclick="showMenu()"></i>
   </div>
 	</footer>
 </section>
+
+  <!-- =============== JavaScript Toggle Menu ======== = -->
+  <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+<!-- ============ End of JavaScript Toggle Menu ============ -->
 </body>
 </html>

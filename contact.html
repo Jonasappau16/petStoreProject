@@ -14,7 +14,7 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
 <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
-           <!-- ###### FONT AWESOME ####### -->
+<!-- ###### FONT AWESOME ####### -->
 
 
      <!-- CUSTOM CSS  -->
@@ -27,8 +27,9 @@
  <nav>
       <!-- ----navlogo ------->
             <a href=""><img src="./images/petsore-removebg-preview.png" alt=""></a>
-           <!-- -------NAVBAR LINKS-------  -->
- <div class="nav-links">
+ <!-- --======= NAVBAR LINKS ======== -->
+ <div class="nav-links" id="navLinks">
+  <i class="fa fa-times" onclick="hideMenu()"></i>
      <ul>
       <li><a href="index.html">HOME</a></li>
      <li><a href="about.html">ABOUT</a></li>
@@ -36,6 +37,8 @@
     <li><a href="./contact.html">CONTACT</a></li>
      </ul>
   </div>
+   <!-- ========= Menu  bars Icon ====== -->
+   <i class="fa fa-bars" onclick="showMenu()"></i>
 </nav>
 
 
@@ -110,5 +113,17 @@
        </div>
 	   </footer>
     </section>
+
+   <!-- =============== JavaScript Toggle Menu ======== = -->
+   <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+<!-- ============ End of JavaScript Toggle Menu ============ 
     </body>
     </html>
