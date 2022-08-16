@@ -12,7 +12,7 @@
     position: relative;
    }
    
-   /* ----------THE NAV BODY --------- */
+   /* --==========THE NAV BODY ============ */
    nav{
     display: flex;
     padding: 2% 6%;
@@ -22,7 +22,7 @@
     
   }
 
-  /* NAV LOGO  */
+  /*=========== NAV LOGO ===========  */
   nav img{
     width: 100px; 
   }
@@ -31,6 +31,22 @@
  flex: 1;
  text-align: right;  
  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px; 
+ }
+ 
+ .nav-links ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Montserrat Alternates', sans-serif; 
+ }
+
+
+   /* =========== HOVER EFFECT ============  */
+
  .nav-links ul li::after{
   content: " ";
   width: 0%;
@@ -43,19 +59,12 @@
 .nav-links ul li:hover::after{
   width: 100%;
 }
- .nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    padding: 10px 20px; 
- }
- .nav-links ul li a{
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: 'Montserrat Alternates', sans-serif; 
- }
-
  /* --======== END OF NAVBAR =========---  */
+
+    /*======== Hamburger Menu ========= */
+    nav .fa{
+      display: none;
+    }
 
   /* =========== ABOUT US SECTION ===========- */
 .column {
@@ -355,11 +364,11 @@
         font-size: 12px;
       }
       .nav-links {
-        position: fixed;
+        position: absolute;
         width:120px;
         height: 100vh;
         top: 0;
-        right: 0 ;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
@@ -367,7 +376,7 @@
 
         /* background: linear-gradient(#ee4035,#f37736,#fdf498,#7bc043, #0392cf); */
         opacity: 1px;  
-        text-align: center;
+        
       }
       /* ======= ===  Hamburgar Menu ========= */
 
