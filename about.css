@@ -88,13 +88,15 @@
     color: rgb(216, 173, 173);
     background-color: transparent;
   }
+  .about-section p{
+  color: white;}
   
   .about-section h1 {
-    color: yellow;
+    color: rgb(0, 213, 255);
     margin-bottom: 20px;
   }
    .h2-heading{
-   color: yellow;
+   color: rgb(10, 169, 201);
    text-align: center;
    margin-bottom: 20px;
   }
@@ -109,7 +111,7 @@
   }
   
   .title {
-    color: rgb(201, 10, 10);
+    color: rgb(10, 169, 201);
   }
   
   .button {
